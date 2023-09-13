@@ -5,6 +5,7 @@ html {
 body {
     /*background-color: #eff8fe;*/
     color: #24292e;
+    font-family: "M PLUS Rounded 1c";
 }
 
 a {
@@ -13,7 +14,7 @@ a {
 
 
 p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 img {
@@ -70,6 +71,7 @@ header .title {
     max-width: 1080px;
     margin: 0 auto 120px auto;
     padding: 0 5%;
+    
 }
 
 .wrapper-h1{
@@ -98,7 +100,7 @@ header .title {
 .top-img-1 {
     width: 100%;
     max-width: 1920px;
-    height: 400px;
+    height: 450px;
     object-fit: cover;
 
 
@@ -129,24 +131,23 @@ header .title {
     padding: 2em;
     /*内側余白*/
     position: relative;
-    border: 8px solid #a9bfdc;
+    border: 6px solid #005fb1;
     /* 線の太さ・種類・色 */
     z-index: 0;
 
 }
 
-.box2:before {
-    background-color: #115184;
-    /* ワインポイントの色 */
+/*.box2:before {
+    background-color: #4688bd;
     content: '';
     display: block;
     position: absolute;
-    top: -8px;
-    left: -8px;
-    width: 8px;
-    height: 8px;
+    top: -6px;
+    left: -6px;
+    width: 6px;
+    height: 6px;
     z-index: 1;
-}
+}*/
 
 .about-main {
     position: relative;
@@ -180,6 +181,7 @@ header .title {
     width: 30%;
     text-align: center;
     margin: auto;
+    
     /* 自動マージンを設定 */
 
 }
@@ -257,6 +259,7 @@ header .title {
     border: 1px solid #cbcbcb;
     box-shadow: 11px 13px 27px 6px rgb(0 0 0 / 10%);
     padding: 4%;
+    /*background-color: #ffffff;*/
 }
 
 .EmotionCode-h2 {
@@ -295,18 +298,22 @@ header .title {
 }
 
 .Emotion-img-PC {
-    width: 55%;
+    width: 80%;
+    
     margin-top: 30px;
     margin-left: 30px;
+    
 }
 
 .EmotionCode-img {
     width: 100%;
+
 }
 
 .EmotionCode-p {
     margin-top: 30px;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    
 }
 
 .Emotion-img-SP {
@@ -318,7 +325,7 @@ header .title {
     padding: 1.5em 1em 1em 2.5em;
     border: 2px solid #2589d0;
     margin-top: 40px;
-    width: 100%;
+    width:80%;
 }
 
 .list-008>div {
@@ -339,17 +346,20 @@ header .title {
 
 .list-008 li {
     padding: .3em .3em .3em 0;
+  
 }
 
 .list-008 li::marker {
     color: #2589d0;
     font-size: 1.1em;
+    
 
 }
 
 /*ハートの壁*/
 .heart-wall {
     margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 .heart-wall-h2 {
@@ -410,7 +420,7 @@ header .title {
 ul.sample1 {
     padding: 0;
     font: 14px/1.6 'arial narrow', sans-serif;
-    width: 370px;
+    width: 500px;
     list-style: none;
     margin: 10px 0 0 20px;
 }
@@ -491,14 +501,15 @@ ul.sample1 li:after {
 }
 
 .body-code-img-PC {
-    width: 55%;
+    width: 60%;
     margin-top: 30px;
     margin-left: 30px;
     text-align: center;
+    text-align: right;
 }
 
 .body-code-img {
-    width: 65%;
+    width: 85%;
 
 }
 
@@ -514,7 +525,6 @@ ul.sample1 li:after {
     width: 90%;
     background-color: #ffffff;
     padding: 1em 1.5em;
-    margin: 2em 0;
     border: 1px solid #a5a9ab;
     /*border:1px solid #84c1ff;枠線*/
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
@@ -554,9 +564,12 @@ ul.sample1 li:after {
 
 .session-warning {
     margin-top: 20px;
-
+    
 }
 
+.session-warning-p{
+    font-size: 1.1rem;
+}
 
 
 /*フッター*/
@@ -605,10 +618,27 @@ ul.sample1 li:after {
     width: 50%;;
 }
 
+.book-set{
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
 /*sp*/
 @media screen and (max-width:600px) {
     p {
         font-size: 0.94rem;
+    }
+
+    .wrapper {
+        max-width: 1080px;
+        margin: 0 auto 60px auto;
+        padding: 0 5%;
+        
+    }
+
+    .top-img {
+        margin-bottom: 60px;
+    
+    
     }
 
     .catchcopy-h1 {
@@ -636,7 +666,7 @@ ul.sample1 li:after {
     }
 
     .about__content {
-        margin: auto;
+        margin: 15px auto;
         width: 100%;
     }
 
@@ -667,7 +697,7 @@ ul.sample1 li:after {
 
     .EmotionCode-p {
         margin-top: 30px;
-        font-size: 1rem;
+        font-size: 0.94rem;
     }
 
     .Emotion-img-SP {
@@ -718,6 +748,15 @@ ul.sample1 li:after {
         display: none;
     }
 
+    ul.sample1 li {
+        font-size: 12px;
+    }
+
+    ul.sample1 li:after {
+        width: 12px;
+        height: 12px;
+    }
+
     .containers {
 
         width: 100%;
@@ -725,10 +764,70 @@ ul.sample1 li:after {
     }
 
     .session-left {
-        margin-top: 20px;
+        margin-top: 40px;
         margin-left: 0px;
     }
     .body-code-img-PC{
         display: none;
+    }
+    
+    .cc-imagewrapper{
+        width: 100%;;
+    }
+
+    ul.sample1 {
+        margin: 10px 0 0 0px;
+    }
+    .session-warning-p{
+        font-size: 0.9rem;
+    }
+    .about-emotion-b{
+        font-size: 0.9rem;
+    }
+
+    .about__headline-jp {
+        font-size: 24px;
+    }
+    .about__headline-en {
+        font-size: 16px;
+    }
+
+    .about-img {
+        width: 140px;
+        border-radius: 50%;
+        border: 5px solid #115184;
+    }
+    .about-main {
+        font-size: 1.2rem;
+        border-left: solid 7px #7db4e6;
+    }
+
+    .wrapper-h1{
+        font-size: 1.2rem;
+        border-left: solid 7px #7db4e6;
+    }
+    .session-h1 {
+        margin-bottom: 0px;
+    }
+    .EmotionCode-h2 {
+        font-size:1.1rem;
+    }
+    .body-code-h2 {
+        font-size:1.1rem;
+    }
+    .booklink{
+        display: block;
+    }
+    .cc-imagewrapper{
+        width: auto;
+        text-align: center;
+    }
+    .book-set{
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .book-description{
+        
+        text-align: center;
     }
 }
